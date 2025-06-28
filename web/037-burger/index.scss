@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Jockey+One&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.project-2025009 {
+    $black-color: #000000;
+    $white-color: #ffffff;
+    $red-color: #D00000;
+    $yellow-color: #FFC74D;
+
+    .header,
+    .try-out-today,
+    .choose-enjoy,
+    .upcoming-events,
+    .reservation,
+    .footer {
+        font-size: 12px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .header {
+        min-height: 51.5625em;
+        background-image: url("./assets/header/header-bg.png");
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.75em;
+            gap: 5em;
+        }
+
+        .menu-bar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo {
+            flex-basis: 50%;
+        }
+
+        .open-menu {
+            font-size: 2em;
+            line-height: 3.625rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .menu {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 5em;
+            justify-content: flex-start;
+            align-items: flex-end;
+            background-color: rgba($color: $white-color, $alpha: 0.9);
+            z-index: 1;
+            transform: translateX(100%);
+            transition: all 1s ease;
+            padding: 1.75em;
+        }
+
+        .close-menu {
+            font-size: 2em;
+            line-height: 3.625rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .nav {
+            width: 100%;
+        }
+
+        .navlink {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .link {
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 1.25em;
+            color: $black-color;
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            padding: 1.2em;
+            text-decoration: none;
+        }
+
+
+
+        .hero-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5em;
+        }
+
+        .hero-text {
+            text-align: center;
+        }
+
+        .text {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 1.25em;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .heading {
+            font-family: "Jockey One", sans-serif;
+            font-weight: 400;
+            font-size: 8em;
+            margin: 0;
+        }
+
+        .hero-img {
+            text-align: center;
+        }
+
+    }
+
+    .try-out-today {
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.75em;
+            gap: 1.75em;
+        }
+
+        .left-side {
+            width: 100%;
+        }
+
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75em;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .most-popular-burger {
+            position: relative;
+
+            .text {
+                position: absolute;
+                top: 10%;
+                left: 5%;
+            }
+        }
+
+        .most-fun-more-taste,
+        .fresh-chili {
+            position: relative;
+
+            .text {
+                position: absolute;
+                top: 50%;
+                left: 5%;
+                transform: translateY(-50%);
+                max-width: 50%;
+            }
+        }
+
+        .heading {
+            font-family: "Inter", sans-serif;
+            font-size: 2em;
+            color: $white-color;
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .para {
+            font-family: "Inter", sans-serif;
+            font-size: 2em;
+            color: $white-color;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+    }
+
+    .choose-enjoy {
+        .container {
+            padding: 1.75em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75em;
+        }
+
+        .slogan {
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 2em;
+            text-transform: uppercase;
+            background-color: $yellow-color;
+            color: $black-color;
+            padding: 5%;
+            margin: 0;
+        }
+
+        .heading {
+            font-family: "Jockey One", sans-serif;
+            font-weight: 400;
+            font-size: 8em;
+            text-transform: uppercase;
+            margin: 0;
+            text-align: center;
+        }
+
+        .para {
+            font-family: "Inter", sans-serif;
+            font-size: 1.25em;
+            font-weight: 400;
+            text-align: center;
+            margin: 0;
+            padding: 1em;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75rem;
+        }
+
+        .card {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 1.75em;
+            box-shadow: 0.25em 0.5em 2em 0 rgb(0 0 0 / 18%);
+            border-radius: 1.25em;
+            margin-top: 5em;
+
+            .name {
+                font-family: "Inter", sans-serif;
+                font-weight: 700;
+                font-size: 1.5em;
+                text-transform: capitalize;
+                margin: 0;
+            }
+
+            .btn {
+                color: $white-color;
+                background-color: $red-color;
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                font-size: 1.5em;
+                text-transform: uppercase;
+                padding: 1em 2em;
+                border: none;
+                margin-bottom: 1.75em;
+            }
+        }
+
+        img {
+            transform: translateY(-15%);
+        }
+
+    }
+
+    .upcoming-events {
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75em;
+            padding: 1.75em;
+        }
+
+        .heading {
+            font-family: "Jockey One", sans-serif;
+            font-weight: 400;
+            font-size: 4em;
+            text-transform: uppercase;
+            margin: 0;
+            text-align: center;
+        }
+
+        .first-word {
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 0.5em;
+            text-transform: capitalize;
+            display: block;
+        }
+
+        .para {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 1.25em;
+        }
+
+    }
+
+    .reservation {
+        padding: 1.75em;
+        background-image: url("./assets/reservation/bg-1.png"), url("./assets/reservation/bg-2.png");
+        background-position: 0% 0%, 100% 100%;
+        background-repeat: no-repeat, no-repeat;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75em;
+        }
+
+        .heading {
+            font-family: "Jockey One", sans-serif;
+            font-size: 8em;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0;
+        }
+
+        .first-word {
+            font-family: "Inter", sans-serif;
+            font-size: 0.25em;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        .form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75em;
+
+            @mixin optional-at-root($sel) {
+                @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+                    @content;
+                }
+            }
+
+            @mixin placeholder {
+                @include optional-at-root('::-webkit-input-placeholder') {
+                    @content;
+                }
+
+                @include optional-at-root(':-moz-placeholder') {
+                    @content;
+                }
+
+                @include optional-at-root('::-moz-placeholder') {
+                    @content;
+                }
+
+                @include optional-at-root(':-ms-input-placeholder') {
+                    @content;
+                }
+            }
+
+            .item {
+                width: 100%;
+                padding: 0.79em;
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                font-size: 1.25em;
+                text-transform: uppercase;
+                color: $black-color;
+
+                @include placeholder {
+                    color: $black-color;
+                }
+            }
+
+            .btn {
+                background-color: $red-color;
+                color: $white-color;
+                border: none;
+            }
+        }
+
+    }
+
+    .footer {
+
+        background-image: url("./assets/footer/footer-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $white-color;
+
+        .container {
+            padding: 1.75em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75em;
+        }
+
+        .footer-logo {
+            flex-basis: 50%;
+        }
+
+        .para {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 1.25em;
+        }
+
+        .footer-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75em;
+            text-align: center;
+        }
+
+        .contact {
+            width: 100%;
+        }
+
+        .social {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75em;
+        }
+
+        i {
+            color: $white-color;
+            font-size: 1.25em;
+        }
+
+    }
+
+    @media screen and (min-width: 992px) {
+
+        .header,
+        .try-out-today,
+        .choose-enjoy,
+        .upcoming-events,
+        .reservation,
+        .footer {
+            font-size: 16px;
+        }
+
+
+        .header {
+            .container {
+                padding: 1.8125em 7.375em;
+            }
+
+            .header-logo {
+                flex-basis: 25%;
+            }
+
+            .open-menu {
+                display: none;
+            }
+
+            .menu {
+                all: unset;
+                flex-basis: 65%;
+            }
+
+            .close-menu {
+                display: none;
+            }
+
+            .navlink {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 2.6875em;
+            }
+
+            .link {
+                padding: 0;
+            }
+
+            .hero-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 0;
+            }
+
+            .hero-text {
+                text-align: left;
+                flex-basis: 45%;
+            }
+
+            .hero-img {
+                text-align: right;
+                flex-basis: 45%;
+            }
+        }
+
+        .try-out-today {
+            .container {
+                flex-direction: row;
+                padding: 7.375em;
+                align-items: stretch;
+            }
+
+            .right-side {
+                justify-content: space-between;
+            }
+
+            .most-fun-more-taste {
+                .text {
+                    left: 1.4375em;
+                    max-width: 45%;
+                }
+            }
+        }
+
+        .choose-enjoy {
+            .container {
+                padding: 5.8125em;
+            }
+
+            .slogan {
+                padding: 1em 4.07812em;
+            }
+
+            .cards {
+                flex-direction: row;
+                align-items: stretch;
+            }
+        }
+
+        .upcoming-events {
+            .container {
+                padding: 5.8125em;
+                flex-direction: row;
+            }
+
+            .heading {
+                text-align: left;
+            }
+        }
+
+        .reservation {
+            background-position: 0% 25%, 100% 80%;
+
+            .container {
+                padding: 5.8125em;
+            }
+
+            .form {
+                width: 75%;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .item {
+                    width: 45%;
+                }
+            }
+        }
+
+        .footer {
+            .container {
+                padding: 5.8125em;
+            }
+
+            .footer-logo {
+                margin-right: auto;
+            }
+
+            .footer-text {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .para {
+                flex-basis: 38%;
+                text-align: left;
+            }
+
+            .contact {
+                flex-basis: 38%;
+
+                .para {
+                    text-align: right;
+                }
+            }
+
+            .social {
+                justify-content: flex-end;
+            }
+        }
+    }
+}

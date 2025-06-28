@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #2B283A;
+    --color-2: #F55A5A;
+    --color-3: #918E9B;
+    --color-4: #FFFFFF;
+    --color-5: #F5F5F5;
+    --color-6: #E5E5E5;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-6);
+}
+
+.travel-journey {
+    width: 550px;
+    height: 704px;
+    background-color: var(--color-4);
+}
+
+.header {
+    height: 50px;
+    background-color: var(--color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.header img {
+    width: 24px;
+    height: 24px;
+}
+
+.header span {
+    color: var(--color-4);
+    font-size: 0.915rem;
+    line-height: auto;
+    letter-spacing: -7.5%;
+}
+
+.entries {
+    padding: 2.5em;
+}
+
+.entry .img {
+    width: 125px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.entry {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5em;
+    border-bottom: 1px solid var(--color-5);
+    padding: 1em 0;
+}
+
+.location .img {
+    width: 7px;
+    height: 9.55px;
+}
+
+.location .country {
+    font-size: 0.64rem;
+    letter-spacing: 17%;
+    text-transform: uppercase;
+}
+
+.location .maps {
+    font-size: 0.64rem;
+    color: var(--color-3);
+}
+
+.location {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.name {
+    font-size: 1.563rem;
+    font-weight: 700;
+    color: var(--color-1);
+    margin: 0;
+}
+
+.date {
+    font-size: 0.64rem;
+    font-weight: 700;
+    color: var(--color-1);
+}
+
+.intro {
+    font-size: 0.64rem;
+    line-height: 1.5;
+    color: var(--color-1);
+}

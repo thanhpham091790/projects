@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #2B283A;
+  --color-2: #FFFFFF;
+  --color-3: #59E391;
+  --color-4: #0B2434;
+  --color-5: #4A4E74;
+  --color-6: #5035FF;
+  --color-7: #F5F5F5;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tenzies {
+  width: 360px;
+  height: 379px;
+  background-color: var(--color-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 320px;
+  height: 320px;
+  background-color: var(--color-7);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33.28px 34.56px;
+}
+
+.intro h1 {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: auto;
+  letter-spacing: -3%;
+  color: var(--color-1);
+  margin: 0;
+  text-align: center;
+}
+.intro p {
+  font-size: 0.819rem;
+  line-height: auto;
+  letter-spacing: -3%;
+  color: var(--color-5);
+  text-align: center;
+  margin: 0;
+}
+
+.dies {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.die {
+  border-radius: 3.81px;
+  background-color: var(--color-2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 1.287rem;
+  line-height: 36px;
+  color: var(--color-1);
+  text-align: center;
+}
+
+.rollBtn {
+  width: 92px;
+  height: 36px;
+  border-radius: 3.81px;
+  border: none;
+  background-color: var(--color-6);
+  box-shadow: 0 3.2px 7.68px 0 rgba(0, 0, 0, 0.18);
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 1.024rem;
+  color: var(--color-2);
+}
+
+.die:hover,
+.rollBtn:hover {
+  cursor: pointer;
+}
+
+.held {
+  background-color: var(--color-3);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}/*# sourceMappingURL=index.css.map */

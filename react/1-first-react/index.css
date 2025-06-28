@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #FFFFFF;
+    --color-2: #61DAFB;
+    --color-3: #00D8FF;
+    --color-4: #33373E;
+    --color-5: #21222A;
+    --color-6: #282D35;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-facts {
+    width: 550px;
+    height: 550px;
+}
+
+.header,
+.main {
+    padding: 0 1.625em;
+}
+
+.header {
+    height: 91px;
+    background-color: var(--color-5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4175em;
+}
+
+.header-text {
+    font-size: 1.39rem;
+    font-weight: 700;
+    letter-spacing: -5%;
+    color: var(--color-2);
+}
+
+.main {
+    background-color: var(--color-6);
+    overflow: hidden;
+    height: 459px;
+    background-image: url("./reactjs-icon-2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+
+.main-heading {
+    color: var(--color-1);
+    margin: 1.46em 0 1em 0;
+    font-size: 2.4475rem;
+    font-weight: 700;
+    letter-spacing: -5%;
+}
+
+.main-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-list li::before {
+    display: block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-3);
+}
+
+.main-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+    color: var(--color-1);
+    padding: 0.5em 2.5em 0.5em 1.5em;
+}

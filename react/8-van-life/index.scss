@@ -1,0 +1,1088 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #4D4D4D;
+    --color-2: #161616;
+    --color-3: #FFFFFF;
+    --color-4: #FFF7ED;
+    --color-5: #FFEAD0;
+    --color-6: #FF8C38;
+    --color-7: #000000;
+    --color-8: #B9B9B9;
+    --color-9: #252525;
+    --color-10: #AAAAAA;
+    --color-11: #E17654;
+    --color-12: #201F1D;
+    --color-13: #858585;
+    --color-14: #115E59;
+    --color-15: #FFCC8D;
+    --color-16: #8C8C8C;
+    --color-17: #C7C7C7;
+    --color-18: #D1D5DB;
+    --color-19: #1C1C1C;
+    --color-20: #68FF65;
+    --color-21: #748AFF;
+    --color-22: #FFDDB2;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.van-type {
+    width: 85.71px;
+    height: 33.89px;
+    border-radius: 5px;
+    border: none;
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 31.7px;
+    text-transform: capitalize;
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+}
+
+.back-to-all-vans {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 27px;
+
+    svg {
+        color: var(--color-13);
+    }
+
+    a {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 22.9px;
+        color: var(--color-12);
+        text-decoration: underline;
+    }
+}
+
+.vanlife {
+    max-width: 548.15px;
+    margin: 0 auto;
+
+    .header {
+        width: 100%;
+        height: 111.62px;
+        background-color: var(--color-4);
+        padding: 0 27px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .nav {
+            margin-left: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 22.9px;
+            color: var(--color-1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                text-decoration: underline;
+                color: var(--color-2);
+            }
+        }
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+
+
+        .home-link {
+            font-weight: 900;
+            font-size: 1.584rem;
+            line-height: 40.3px;
+            color: var(--color-7);
+            text-transform: uppercase;
+        }
+    }
+
+    .home-page {
+        min-height: 386.7px;
+        padding: 0 26px;
+
+        background-image: url("/home/home-bg.png");
+        background-color: rgba(0, 0, 0, .46);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 36px;
+        }
+
+
+        h2 {
+            margin: 0;
+            font-weight: 800;
+            font-size: 2.25rem;
+            line-height: 42px;
+            color: var(--color-3);
+        }
+
+        p {
+            margin: 0;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 24px;
+            color: var(--color-3);
+        }
+
+        button {
+            width: 100%;
+            height: 49.83px;
+            border-radius: 5px;
+            background-color: var(--color-6);
+            border: none;
+
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 0.997rem;
+            line-height: 31.7px;
+            color: var(--color-3);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .hosts-page {
+        background-color: var(--color-4);
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .host-nav {
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 22.9px;
+            color: var(--color-1);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 32px;
+            padding: 27px;
+        }
+
+        .dashboard {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 22px;
+            color: var(--color-1);
+
+            .income,
+            .score,
+            .vans {
+                padding: 8px 27px;
+            }
+
+            .income {
+                width: 100%;
+                height: 219px;
+                background-color: var(--color-5);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: stretch;
+
+                .welcome {
+                    font-weight: 700;
+                    font-size: 2.25rem;
+                    line-height: 22px;
+                    color: var(--color-2);
+                }
+
+                .text {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    span a {
+                        text-decoration: underline;
+                        font-weight: 700;
+                    }
+
+                    a {
+                        margin-left: auto;
+                    }
+                }
+
+                .number {
+                    font-weight: 800;
+                    font-size: 3rem;
+                    line-height: 38px;
+                    color: var(--color-2);
+                }
+            }
+
+            .score {
+                width: 100%;
+                height: 113px;
+                border-radius: 5px;
+                background-color: var(--color-22);
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                a {
+                    margin-left: auto;
+                }
+
+                span {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    line-height: 22px;
+                }
+
+                svg {
+                    color: var(--color-6);
+                    margin-left: 8px;
+                }
+            }
+
+            .vans {
+                padding: 32px 27px;
+
+                p {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    line-height: 22px;
+                    color: var(--color-2);
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding-bottom: 27px;
+
+                    a {
+                        margin-left: auto;
+                        font-weight: 500;
+                        font-size: 1rem;
+                    }
+                }
+
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .van {
+                        width: 100%;
+                        height: 102px;
+                        border-radius: 6px;
+                        background-color: var(--color-3);
+                        padding: 0 27px;
+
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 16px;
+
+                        img {
+                            width: 65.88px;
+                            height: 65.88px;
+                            border-radius: 5px;
+                            object-fit: cover;
+                        }
+
+                        .name {
+                            font-weight: 600;
+                            font-size: 1.25rem;
+                            line-height: 31.7px;
+                            color: var(--color-2);
+                        }
+
+                        a {
+                            margin-left: auto;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .vans {
+            padding: 32px 27px;
+
+            p {
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 33.7px;
+                color: var(--color-2);
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-bottom: 27px;
+
+                a {
+                    margin-left: auto;
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .van a {
+                    width: 100%;
+                    height: 102px;
+                    border-radius: 6px;
+                    background-color: var(--color-3);
+                    padding: 0 27px;
+
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 16px;
+
+                    img {
+                        width: 65.88px;
+                        height: 65.88px;
+                        object-fit: cover;
+                        border-radius: 5px;
+                    }
+
+                    .name {
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 31.7px;
+                        color: var(--color-2);
+                    }
+
+                    a {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+
+        .host-van-detail {
+            padding: 27px;
+
+            .container {
+                width: 100%;
+                height: 499px;
+                border-radius: 6px;
+                background-color: var(--color-3);
+                padding: 27px;
+            }
+
+            .top {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 27px;
+
+                img {
+                    width: 160.15px;
+                    height: 157.9px;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    gap: 16px;
+
+                    .simple {
+                        color: var(--color-5);
+                        background-color: var(--color-11);
+                    }
+
+                    .rugged {
+                        color: var(--color-5);
+                        background-color: var(--color-14);
+                    }
+
+                    .luxury {
+                        color: var(--color-5);
+                        background-color: var(--color-2);
+                    }
+                }
+
+                .name {
+                    font-weight: 700;
+                    font-size: 1.629rem;
+                    line-height: 27.4px;
+                    color: var(--color-2);
+                }
+
+                .price {
+                    font-weight: 700;
+                    font-size: 1.221rem;
+                    line-height: 36px;
+                    color: var(--color-2);
+                }
+            }
+
+            .nav {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 32px;
+
+                a {
+                    display: inline-block;
+                    padding: 27px 0;
+                }
+            }
+
+            .details {
+                p {
+                    font-weight: 500;
+                    font-size: 0.897rem;
+                    line-height: 21.5px;
+                    color: var(--color-2);
+                    margin-bottom: 16px;
+                }
+            }
+
+            .pricing {
+                p {
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 21.5px;
+                    color: var(--color-2);
+                }
+            }
+
+            .photos {
+                img {
+                    width: 103px;
+                    height: 101.56px;
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .reviews {
+            padding: 27px;
+
+            svg {
+                width: 24px;
+                height: 24px;
+                color: var(--color-6);
+            }
+
+            .title-section {
+                h2 {
+                    font-weight: 700;
+                    font-size: 2rem;
+                    line-height: 33.7px;
+                    color: var(--color-2);
+                    display: inline-block;
+                }
+
+                span {
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 22px;
+                    color: var(--color-1);
+                    margin-left: 16px;
+                }
+
+                a {
+                    font-weight: 700;
+                    text-decoration: underline;
+                }
+            }
+
+            .rating-section {
+                margin: 27px 0;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 22px;
+                color: var(--color-1);
+
+                .rating-title {
+                    color: var(--color-2);
+                    margin-bottom: 27px;
+
+                    .big {
+                        font-weight: 700;
+                        font-size: 2rem;
+                        line-height: 22.9px;
+                        color: var(--color-2);
+                    }
+
+                }
+
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 16px;
+
+                    .row {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 27px;
+
+                        span {
+                            flex: 1;
+                        }
+
+                        .meter {
+                            flex: 5;
+                        }
+
+                        .percent {
+                            text-align: right;
+                        }
+                    }
+
+                    .meter {
+                        width: 335px;
+                        height: 10px;
+                        border-radius: 10px;
+                        background: var(--color-8);
+                        position: relative;
+                        box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+
+                        span {
+                            display: block;
+                            height: 100%;
+                            border-radius: 10px;
+                            background-color: var(--color-6);
+                            position: relative;
+                            overflow: hidden;
+                        }
+                    }
+
+                }
+            }
+
+            .review-section {
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 22.2px;
+                color: var(--color-2);
+
+                .review-title {
+                    font-weight: 700;
+                    font-size: 1.125rem;
+                    line-height: 22.9px;
+                    margin-bottom: 27px;
+                }
+
+                .review {
+                    margin-bottom: 27px;
+                    border-bottom: 1px solid var(--color-16);
+                    padding-bottom: 27px;
+
+                    .name {
+                        color: var(--color-2);
+                        font-weight: 600;
+                        margin: 8px 0;
+                    }
+
+                    .date {
+                        color: var(--color-16);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .income {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 27px;
+            padding: 27px;
+
+            h2 {
+                font-weight: 700;
+                font-size: 2.25rem;
+                line-height: 22px;
+                color: var(--color-2);
+            }
+
+            .period {
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 22px;
+                color: var(--color-1);
+
+                a {
+                    text-decoration: underline;
+                    font-weight: 700;
+                }
+            }
+
+            .total {
+                font-weight: 900;
+                font-size: 3rem;
+                line-height: 38px;
+                color: var(--color-2);
+            }
+
+            .trans {
+                font-weight: 700;
+                font-size: 1.5rem;
+                line-height: 22px;
+                color: var(--color-2);
+                margin-right: 16px;
+            }
+
+            .container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 27px;
+            }
+
+            .row {
+                width: 100%;
+                height: 102px;
+                border-radius: 6px;
+                background-color: var(--color-3);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 27px;
+            }
+
+            .trans-income {
+                font-weight: 600;
+                font-size: 2.25rem;
+                line-height: 31.7px;
+            }
+
+            .trans-date {
+                font-weight: 500;
+                font-size: 1.25rem;
+                line-height: 31.7px;
+                color: var(--color-1);
+            }
+        }
+    }
+
+    .about-page {
+        .content {
+            padding: 54px 27px;
+            background-color: var(--color-4);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 32px;
+
+            h2,
+            h3,
+            p {
+                margin: 0;
+            }
+
+            h2 {
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 38px;
+                color: var(--color-2);
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 22px;
+                color: var(--color-2);
+            }
+
+            .explore {
+                width: 100%;
+                height: 198px;
+                background-color: var(--color-15);
+                border-radius: 5px;
+                padding: 2rem;
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 1.5rem;
+                line-height: 30px;
+                color: var(--color-2);
+                margin-bottom: 1.5rem;
+            }
+
+            button {
+                width: 174px;
+                height: 49px;
+                background-color: var(--color-2);
+                color: var(--color-3);
+                border: none;
+                border-radius: 10px;
+                font-family: inherit;
+                font-weight: 700;
+                font-size: 0.997rem;
+                line-height: 23.9px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+    .vans-page {
+        padding: 27px;
+        background-color: var(--color-4);
+
+        h2 {
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 33.7px;
+            color: var(--color-2);
+            margin-bottom: 27px;
+        }
+
+        .vans-filter {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 27px;
+            text-transform: capitalize;
+
+            button {
+                font: inherit;
+                background-color: var(--color-5);
+                color: var(--color-1);
+            }
+
+            .simple:hover,
+            .simple:focus,
+            .simple.selected {
+                color: var(--color-5);
+                background-color: var(--color-11);
+            }
+
+            .rugged:hover,
+            .rugged:focus,
+            .rugged.selected {
+                color: var(--color-5);
+                background-color: var(--color-14);
+            }
+
+            .luxury:hover,
+            .luxury:focus,
+            .luxury.selected {
+                color: var(--color-5);
+                background-color: var(--color-2);
+            }
+
+            .clear-filters {
+                font: inherit;
+                border: none;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        }
+
+        .vans-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 27px;
+
+            a {
+                text-decoration: none;
+            }
+
+            .van-image {
+                width: 229.23px;
+                height: 229.23px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+            .name-price {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .van-name {
+                font-weight: 600;
+                font-size: 1.25rem;
+                line-height: 31.7px;
+                color: var(--color-2);
+            }
+
+            .van-price {
+                font-weight: 600;
+                font-size: 1.25rem;
+                color: var(--color-2);
+                display: flex;
+                flex-direction: column;
+                text-align: right;
+
+                span {
+                    font-weight: 400;
+                    font-size: 0.8rem;
+                }
+            }
+
+            .simple {
+                color: var(--color-5);
+                background-color: var(--color-11);
+            }
+
+            .rugged {
+                color: var(--color-5);
+                background-color: var(--color-14);
+            }
+
+            .luxury {
+                color: var(--color-5);
+                background-color: var(--color-2);
+            }
+        }
+    }
+
+    .van-detail-page {
+        padding: 27px;
+        background-color: var(--color-4);
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .van-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .simple {
+            color: var(--color-5);
+            background-color: var(--color-11);
+        }
+
+        .rugged {
+            color: var(--color-5);
+            background-color: var(--color-14);
+        }
+
+        .luxury {
+            color: var(--color-5);
+            background-color: var(--color-2);
+        }
+
+        .van-name {
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 33.7px;
+            color: var(--color-2);
+        }
+
+        .van-price {
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 44.2px;
+            color: var(--color-2);
+
+            span {
+                font-weight: 500;
+                font-size: 1.25rem;
+            }
+        }
+
+        .van-description {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 23.9px;
+            color: var(--color-2);
+        }
+
+        .van-rent {
+            width: 100%;
+            height: 49.83px;
+            border-radius: 4.98px;
+            background-color: var(--color-6);
+            border: none;
+
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 1.125rem;
+            line-height: 31.7px;
+            color: var(--color-3);
+        }
+    }
+
+    .login-page {
+        background-color: var(--color-4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 54px;
+        padding: 54px 27px;
+
+        .required,
+        .error {
+            color: var(--color-6);
+        }
+
+        h2 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 24px;
+            color: var(--color-2);
+        }
+
+        form {
+            width: 100%;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 9px 13px;
+            color: var(--color-1);
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 24px;
+            border: 1px solid var(--color-18);
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        input[type="text"] {
+            border-radius: 6px 6px 0 0;
+            border-bottom: none;
+        }
+
+        input[type="password"] {
+            border-radius: 0 0 6px 6px;
+        }
+
+        button {
+            width: 100%;
+            height: 55px;
+            border: none;
+            border-radius: 6px;
+            background-color: var(--color-6);
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .5);
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 20px;
+            color: var(--color-3);
+            margin-top: 27px;
+        }
+
+        a {
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 24px;
+            color: var(--color-6);
+            text-decoration: none;
+        }
+    }
+
+    .not-found-page {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 27px;
+        padding: 27px;
+        background-color: var(--color-4);
+
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 42px;
+            color: var(--color-2);
+        }
+
+        button {
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 1.125rem;
+            line-height: 31.7px;
+
+            width: 100%;
+            height: 55px;
+            border: none;
+            border-radius: 5px;
+            background-color: var(--color-2);
+            color: var(--color-3);
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: 74.75px;
+        background-color: var(--color-9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-10);
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 22.9px;
+    }
+}
