@@ -19,14 +19,13 @@ export default function Login() {
         setStatus("submitting");
         loginUser(loginData)
             .then(data => {
-                data.user && localStorage.setItem("loggedIn", true);
+                data.length > 0 && localStorage.setItem("loggedIn", true);
                 setError(false);
                 location.state?.pathname ?
                     navigate(`${location.state.pathname}`, { replace: true }) :
                     navigate("/host", { replace: true });
             })
             .catch(err => {
-                console.log(err);
                 setError(err)
             })
             .finally(() => setStatus("idle"));

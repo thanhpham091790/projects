@@ -52,18 +52,38 @@ export async function getHostVans() {
 
 // Check login user
 export async function loginUser(creds) {
-    const res = await fetch("/api/login",
-        { method: "post", body: JSON.stringify(creds) }
-    )
-    const data = await res.json()
 
-    if (!res.ok) {
-        throw {
-            message: data.message,
-            statusText: res.statusText,
-            status: res.status
-        }
-    }
+    const q = query(
+        collection(db, "users"),
+        where("password", "==", creds.password),
+        where("username", "==", creds.username)
+    );
 
-    return data
+    const snapshot = await getDocs(q);
+
+    const users = snapshot.docs.map(doc => {
+        return {
+            id: doc.id,
+            ...doc.data()
+        };
+    });
+
+    console.log(users);
+
+    return users;
+
+    // const res = await fetch("/api/login",
+    //     { method: "post", body: JSON.stringify(creds) }
+    // )
+    // const data = await res.json()
+
+    // if (!res.ok) {
+    //     throw {
+    //         message: data.message,
+    //         statusText: res.statusText,
+    //         status: res.status
+    //     }
+    // }
+
+    // return data
 }
