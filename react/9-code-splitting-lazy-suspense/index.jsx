@@ -16,13 +16,13 @@ function App() {
 
   return (
     <>
-      <h1>The current count is {count}</h1>
+      <h1>The current count is : {count}</h1>
       <button className="button" onClick={decrement}>
         -
-            </button>
+      </button>
       <button className="button" onClick={increment}>
         +
-            </button>
+      </button>
       <br />
       <br />
       <button
@@ -30,7 +30,7 @@ function App() {
         onClick={() => setShowProducts(prev => !prev)}
       >
         Show Products
-            </button>
+      </button>
       <br />
       <br />
       <div className="products-list">
